@@ -1,53 +1,33 @@
-# Heroku Django Starter Template
+#The Road Home Volunteer Time Tracker
 
-An utterly fantastic project starter template for Django 1.11.
+##Install Python
+Download and install python 3.6.1
+https://www.python.org/downloads/
 
-## Features
+Install using defaults and add it to your path with windows installer or Linux env variable
 
-- Production-ready configuration for Static Files, Database Settings, Gunicorn, etc.
-- Enhancements to Django's static file serving functionality via WhiteNoise.
-- Latest Python 3.6 runtime environment. 
+##Use bash or PowerShell
+Open bash or PowerShell (ps) and type pip --version to make sure you have version v9.0.1
 
-## How to Use
+We will use pip to download and install all the packages needed. You'll need the .env file to build locally. You have that file if you are a contributor to the project. This will hold passwords and secrets that are not shared online. Please do not ever commit it. It's already in the .gitignore file and as long as it remains there, we never have to worry.
 
-To use this project, follow these steps:
+##Clone the repo
+First download this repo and then browse to it in bash or ps and type 'pip install virtualenv' to install the latest version.
 
-1. Create your working environment.
-2. Install Django (`$ pip install django`)
-3. Create a new project using this template
+##Install postgres
+After which, install postgres locally using this: https://www.enterprisedb.com/downloads/postgres-postgresql-downloads and using the latest version v9.6.3 and use a good password and remember it. NEVER commit it!
 
-## Creating Your Project
+##Sometimes not required, you'll have to test
+Remember to update your PATH environment variable to add the bin directory of your Postgres installation. The directory will be similar to this: C:\Program Files\PostgreSQL\<VERSION>\bin. If you forget to update your PATH, commands like heroku pg:psql won’t work.
 
-Using this template to create a new Django app is easy::
+#Enable VENV
+Enable venv in the directory with bash or ps open: .\venv\Scripts\activate for windows and source .\venv\Scripts\activate for bash
 
-    $ django-admin.py startproject --template=https://github.com/heroku/heroku-django-template/archive/master.zip --name=Procfile helloworld
+##Install pip requirements
+Then type 'pip install -r requirements.txt' and watch the downloads go by. This installs all the requirements you need to run the website. Congrats! Way easier than PHP…
 
-(If this doesn't work on windows, replace `django-admin.py` with `django-admin`)
+##Run locally
+python manage.py runserver
 
-You can replace ``helloworld`` with your desired project name.
-
-## Deployment to Heroku
-
-    $ git init
-    $ git add -A
-    $ git commit -m "Initial commit"
-
-    $ heroku create
-    $ git push heroku master
-
-    $ heroku run python manage.py migrate
-
-See also, a [ready-made application](https://github.com/heroku/python-getting-started), ready to deploy.
-
-## Using Python 2.7?
-
-Just update `runtime.txt` to `python-2.7.13` (no trailing spaces or newlines!).
-
-
-## License: MIT
-
-## Further Reading
-
-- [Gunicorn](https://warehouse.python.org/project/gunicorn/)
-- [WhiteNoise](https://warehouse.python.org/project/whitenoise/)
-- [dj-database-url](https://warehouse.python.org/project/dj-database-url/)
+##View in Browser
+http://localhost:8000

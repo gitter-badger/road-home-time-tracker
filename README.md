@@ -1,5 +1,5 @@
 # The Road Home Volunteer Time Tracker
-https://road-home.heroku.com
+https://road-home.herokuapp.com
 
 ## Install Python
 Download and install python 3.6.1

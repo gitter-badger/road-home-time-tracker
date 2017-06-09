@@ -36,7 +36,7 @@ Enable venv in the directory with powershell/cmd
 > .\venv\Scripts\activate
 
 and for Linux bash
-> source .\venv\bin\activate
+> source ./venv/bin/activate
 
 ## Install pip requirements - EVERY GIT PULL
 Then type

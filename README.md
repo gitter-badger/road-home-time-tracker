@@ -1,4 +1,6 @@
 # The Road Home Volunteer Time Tracker
+
+[![Join the chat at https://gitter.im/road-home-time-tracker/Lobby](https://badges.gitter.im/road-home-time-tracker/Lobby.svg)](https://gitter.im/road-home-time-tracker/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 https://road-home.herokuapp.com
 
 ## Install Python

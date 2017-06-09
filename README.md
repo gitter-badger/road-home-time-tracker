@@ -32,7 +32,7 @@ Enable venv in the directory with powershell/cmd
 > .\venv\Scripts\activate
 
 and for Linux bash
-> source .\venv\Scripts\activate
+> source ./venv/bin/activate
 
 ## Install pip requirements
 Then type
